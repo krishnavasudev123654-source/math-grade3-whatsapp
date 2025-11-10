@@ -1,0 +1,8 @@
+services:
+  - type: static_site
+    name: math-grade3-whatsapp
+    env: node
+    branch: main
+    buildCommand: npm ci && npm run build
+    publishPath: build
+    plan: free
